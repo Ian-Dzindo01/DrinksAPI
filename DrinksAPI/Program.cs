@@ -18,6 +18,14 @@ static async Task ProcessRepositoriesAsync(HttpClient client)
 
     var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(stream);
 
-    foreach (var repo in repositories ?? Enumerable.Empty<Repository>())
-        Console.WriteLine(repo.name);
+    foreach (var repo in repositories)
+    {
+        Console.WriteLine($"Name: {repo.Name}");
+        Console.WriteLine($"Homepage: {repo.Homepage}");
+        Console.WriteLine($"GitHub: {repo.GitHubHomeUrl}");
+        Console.WriteLine($"Description: {repo.Description}");
+        Console.WriteLine($"Watchers: {repo.Watchers:#,0}");
+        Console.WriteLine($"Last push: {repo.LastPush}");
+        Console.WriteLine();
     }
+}
