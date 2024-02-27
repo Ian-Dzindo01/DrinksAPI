@@ -1,0 +1,15 @@
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\bin\Debug\net8.0\DrinksAPI.exe
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\bin\Debug\net8.0\DrinksAPI.deps.json
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\bin\Debug\net8.0\DrinksAPI.runtimeconfig.json
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\bin\Debug\net8.0\DrinksAPI.dll
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\bin\Debug\net8.0\DrinksAPI.pdb
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\DrinksAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\DrinksAPI.AssemblyInfoInputs.cache
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\DrinksAPI.AssemblyInfo.cs
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\DrinksAPI.csproj.CoreCompileInputs.cache
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\DrinksAPI.sourcelink.json
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\DrinksAPI.dll
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\refint\DrinksAPI.dll
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\DrinksAPI.pdb
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\DrinksAPI.genruntimeconfig.cache
+C:\Users\iandz\OneDrive\Desktop\Projects\DrinksAPI\DrinksAPI\obj\Debug\net8.0\ref\DrinksAPI.dll
