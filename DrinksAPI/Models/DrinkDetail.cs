@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace drinks_info.Models
+namespace drinks_info
 {
     internal class DrinkDetailObject
     {

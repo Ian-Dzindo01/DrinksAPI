@@ -37,8 +37,7 @@ namespace drinks_info
                 drink = Console.ReadLine();
             }
 
-            
-
+            drinksService.GetDrink(drink);
         }
     }
 }

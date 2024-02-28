@@ -55,19 +55,19 @@ public class DrinksService
         var request = new RestRequest($"filter.php?c={HttpUtility.UrlEncode(drink)}");
         var response = client.ExecuteAsync(request);
 
-        if(response.Result.StatusCode == System.Net.HttpStatusCode.OK)
-        {
-            string rawResponse = response.Result.Content;
+            if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                string rawResponse = response.Result.Content;
 
-            var serialize = JsonConvert.DeserializeObject<DrinkDetailObject>(rawResponse);
+                var serialize = JsonConvert.DeserializeObject<DrinkDetailObject>(rawResponse);
 
-            List<DrinkDetail> returnedList = serialize.DrinkDetailList;
+                List<DrinkDetail> returnedList = serialize.DrinkDetailList;
 
-            DrinkDetail drinkDetail = returnedList[0];
+                DrinkDetail drinkDetail = returnedList[0];
 
-            List<object> prepList = new();
+                List<object> prepList = new();
 
-            string formattedName = "";
+                string formattedName = "";
 
             foreach(PropertyInfo prop in drinkDetail.GetType().GetProperties())
                 {
@@ -79,12 +79,12 @@ public class DrinksService
                     {
                         prepList.Add(new
                         {
-                            Key = formattedName;
-                            Value = prop.GetValue(drinkDetail);
+                            Key = formattedName,
+                            Value = prop.GetValue(drinkDetail)
                         });
                     }
                 }
+            TableVisualization.ShowTable(prepList, drinkDetail.strDrink);
         }
-
     }
 }
