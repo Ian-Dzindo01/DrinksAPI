@@ -1,31 +1,10 @@
-﻿using System.Net.Http.Headers;
-using System.Text.Json;
+﻿namespace drinks_info;
 
-using HttpClient client = new();
-// Accept header specifies media types that the client is willing to receive in the response.
-// Clear previous headers
-client.DefaultRequestHeaders.Accept.Clear();
-client.DefaultRequestHeaders.Accept.Add( 
-    new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
-// User-Agent necessary for GitHub
-client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-
-await ProcessRepositoriesAsync(client);
-
-static async Task ProcessRepositoriesAsync(HttpClient client)
+class Program
 {
-    await using Stream stream = await client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
-
-    var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(stream);
-
-    foreach (var repo in repositories)
+    static void Main(string[] args)
     {
-        Console.WriteLine($"Name: {repo.Name}");
-        Console.WriteLine($"Homepage: {repo.Homepage}");
-        Console.WriteLine($"GitHub: {repo.GitHubHomeUrl}");
-        Console.WriteLine($"Description: {repo.Description}");
-        Console.WriteLine($"Watchers: {repo.Watchers:#,0}");
-        Console.WriteLine($"Last push: {repo.LastPush}");
-        Console.WriteLine();
+        UserInput userInput = new();
+        userInput.GetCategoriesInput();
     }
 }
