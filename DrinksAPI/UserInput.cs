@@ -26,6 +26,19 @@ namespace drinks_info
         private void GetDrinksInput(string category)
         {
             drinksService.GetDrinksByCategory(category);
+
+            Console.WriteLine("Choose a drink: ");
+
+            string drink = Console.ReadLine();
+
+            while(!Validator.IsIdValid(drink))
+            {
+                Console.WriteLine("\n Invalid drink");
+                drink = Console.ReadLine();
+            }
+
+            
+
         }
     }
 }

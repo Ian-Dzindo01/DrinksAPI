@@ -13,8 +13,6 @@ public class TableVisualization
         if (tableName == null)
             tableName = "";
         
-        Console.WriteLine("Executed this!");
-
         ConsoleTableBuilder
             .From(tableData)
             .WithColumn(tableName)
