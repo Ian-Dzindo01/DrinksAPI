@@ -4,6 +4,7 @@ namespace drinks_info;
 
 public class Drinks
 {
+    //Specify serialization
     [JsonProperty("drinks")]
     public List<Drink> DrinksList {get; set;}
 }

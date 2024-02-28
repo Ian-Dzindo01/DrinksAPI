@@ -14,6 +14,7 @@ namespace drinks_info
 
             string category = Console.ReadLine();
 
+            // Check input validity
             while(!Validator.IsStringValid(category))
             {
                 Console.WriteLine("\nInvalid category");

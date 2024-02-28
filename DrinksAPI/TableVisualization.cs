@@ -10,13 +10,17 @@ public class TableVisualization
     class 
     {   
         Console.Clear();
+
+        // Set table name if not provided
         if (tableName == null)
             tableName = "";
-        
+            
+        // Write row and column data
         ConsoleTableBuilder
             .From(tableData)
             .WithColumn(tableName)
             .ExportAndWriteLine();
+
         Console.WriteLine("\n \n");
     }   
 }
