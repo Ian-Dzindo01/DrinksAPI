@@ -12,11 +12,9 @@ public class TableVisualization
         Console.Clear();
         if (tableName == null)
             tableName = "";
-
-        Console.WriteLine("\n \n");
         
         Console.WriteLine("Executed this!");
-        
+
         ConsoleTableBuilder
             .From(tableData)
             .WithColumn(tableName)
