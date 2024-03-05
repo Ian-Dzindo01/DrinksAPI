@@ -10,7 +10,7 @@ namespace drinks_info
     }
     internal class DrinkDetail
     {
-        public string strDrink { get; set; }
+        public string strDrink { get; set; }    
         public object strDrinkAlternate { get; set; }
         public object strTags { get; set; }
         public object strVideo { get; set; }
